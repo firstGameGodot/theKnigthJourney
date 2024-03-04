@@ -1,2 +1,0 @@
-# towerKnight
-Jogo legal bacana.
