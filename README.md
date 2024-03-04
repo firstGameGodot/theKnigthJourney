@@ -1,2 +1,2 @@
-# theKnigthJourney
+# towerKnight
 Jogo legal bacana.
