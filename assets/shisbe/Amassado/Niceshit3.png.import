@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgm8qv1i4fj5a"
-path="res://.godot/imported/Shisbe.png-cce383cd3b3c633871e9dc203d112211.ctex"
+uid="uid://cucae1cbjc0gm"
+path="res://.godot/imported/Niceshit3.png-8eb026bed78de552696392ab34c6ff48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Shisbe.png"
-dest_files=["res://.godot/imported/Shisbe.png-cce383cd3b3c633871e9dc203d112211.ctex"]
+source_file="res://assets/shisbe/Amassado/Niceshit3.png"
+dest_files=["res://.godot/imported/Niceshit3.png-8eb026bed78de552696392ab34c6ff48.ctex"]
 
 [params]
 

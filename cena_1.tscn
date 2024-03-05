@@ -1,0 +1,69 @@
+[gd_scene load_steps=14 format=3 uid="uid://byta4m44l6bca"]
+
+[ext_resource type="Texture2D" uid="uid://cxdfs4jlstm4m" path="res://assets/shisbe/Shisbe (1).png" id="1_vasyg"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_y73t4"]
+[ext_resource type="Texture2D" uid="uid://cl0rvjel3dr26" path="res://assets/shisbe/Shisbe (2).png" id="2_5urnm"]
+[ext_resource type="Texture2D" uid="uid://c1e40pv1n0fgj" path="res://assets/shisbe/ShisbeAnimado1.png" id="3_o864e"]
+[ext_resource type="Texture2D" uid="uid://d2p1vl8x5gdqg" path="res://assets/shisbe/ShisbeAnimado2.png" id="4_uao7d"]
+[ext_resource type="Texture2D" uid="uid://bfsfof5gydqb0" path="res://assets/shisbe/ShisbeAnimado3.png" id="5_sj6fy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvfar"]
+atlas = ExtResource("1_vasyg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uf8lx"]
+atlas = ExtResource("2_5urnm")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8qw5"]
+atlas = ExtResource("3_o864e")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10m66"]
+atlas = ExtResource("4_uao7d")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqb7g"]
+atlas = ExtResource("5_sj6fy")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dvima"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvfar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uf8lx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8qw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10m66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqb7g")
+}],
+"loop": true,
+"name": &"shit",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7i76x"]
+radius = 19.0
+height = 38.0
+
+[node name="cena1" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(121, 239)
+script = ExtResource("1_y73t4")
+
+[node name="anim" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_dvima")
+animation = &"shit"
+frame_progress = 0.712947
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_7i76x")
